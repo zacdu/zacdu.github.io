@@ -456,6 +456,10 @@ body {
   font-weight: 100;
 }
 
+.fa-spotify:before{
+  font-size: 150%;
+}
+
 .fa-linkedin-square:before{
     font-size: 150%;
 }
