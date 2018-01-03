@@ -46,17 +46,6 @@
 //     }, 1000);
 // });
 
-function createText() {
-    var subtitle = new TypeIt("#secondNameText", {
-        strings: "",
-        speed: 100,
-        breakLines: false,
-        lifeLike: true,
-        autoStart: false
-    });
-    subtitle.type("..and I like to write")
-}
-
 var title = new TypeIt('#nameHeader', {
     strings: ["Hello"],
     speed: 90,
@@ -71,7 +60,9 @@ title.pause(500);
 title.type("and I like to develop web & mobile apps.");
 title.pause(200);
 title.break();
+title.pause(250);
 title.break();
+title.pause(100);
 title.break();
 title.pause(2500);
 title.options({speed: 80});
