@@ -59,6 +59,7 @@ function Circle(x, y, dx, dy, radius, r, g, b, a, minRadius) {
             && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
                 if (this.radius < maxRadius) {
                     this.radius += 1.2;
+                    this.g += 80;
                 }
         } else if (this.radius > this.minRadius){ 
             // this.radius -= 1;
@@ -75,7 +76,7 @@ console.log(circleArray)
 
 function init() {
     circleArray = []
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 200; i++) {
         if (i % 2 === 0) {
         // var r = Math.floor(Math.random() * 255)
         // var g = Math.floor(Math.random() * 0)
