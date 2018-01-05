@@ -33,14 +33,14 @@ function Circle(x, y, dx, dy, radius, rgba, minRadius) {
     this.dy = dy;
     this.radius = radius;
     this.minRadius = radius;
-    // this.r = r;
-    // this.g = g;
-    // this.b = b;
-    // this.a = a;
+    // this.r = r; K
+    // this.g = g; E
+    // this.b = b; E
+    // this.a = a; P!
     this.rgba = rgba;
 
     this.draw = function () {
-        // var rgb = "rgba(" + this.r + ", " + this.g + ", " + this.b + ", " + a + ")"
+        // var rgb = "rgba(" + this.r + ", " + this.g + ", " + this.b + ", " + a + ")" KEEP!!
         var rgb = rgba
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2.2, false);
@@ -65,7 +65,7 @@ function Circle(x, y, dx, dy, radius, rgba, minRadius) {
             && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
                 if (this.radius < maxRadius) {
                     this.radius += 1.2;
-                    this.dy += 0.12;
+                    this.dy += 0.2;
                 }
         } else if (this.radius > this.minRadius){ 
             // this.radius -= 1;
@@ -84,6 +84,7 @@ function init() {
     circleArray = []
     var randomNumber = Math.floor(Math.random() * colorsArray.length) 
     var color = colorsArray[randomNumber]
+    var radius = Math.random() * 5 + 1;
 
     for (let i = 0; i < 100; i++) {
         if (i % 2 === 0) {
@@ -91,20 +92,22 @@ function init() {
         // var g = Math.floor(Math.random() * 0)
         // var b = Math.floor(Math.random() * 0)
         // var a = 0.3;
+        var radius = radius;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * innerHeight - (radius * 2) + radius;
         var dx = (Math.random() - 0.5);
         var dy = (Math.random() - 0.5);
-        var radius = Math.random() * 3 + 1;
         circleArray.push(new Circle(x, y, dx, dy, radius, color[0]));
         } else if (i % 5 === 0) {
+            var radius = radius;
             var x = Math.random() * (innerWidth - radius * 2) + radius;
             var y = Math.random() * innerHeight - (radius * 2) + radius;
             var dx = (Math.random() - 0.5);
             var dy = (Math.random() - 0.5);
-            var radius = Math.random() * 3 + 1;
+            var radius = Math.random() * 3 + 1.2;
             circleArray.push(new Circle(x, y, dx, dy, radius, color[1]));
         } else {
+            var radius = radius;
             var x = Math.random() * (innerWidth - radius * 2) + radius;
             var y = Math.random() * innerHeight - (radius * 2) + radius;
             var dx = (Math.random() - 0.5);
