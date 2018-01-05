@@ -164,7 +164,7 @@ header {
   -o-background-size: cover;
   background-position: center;
   /* background-image: url('../img/header.jpg'); */
-  background: linear-gradient(177deg, #093028, #237A57);
+  background: linear-gradient(177deg, #093028, #237A57, #77A1D3);
   background-size: 300% 300%;
 
   -webkit-animation: headerAnimation 35s ease-in-out infinite;
