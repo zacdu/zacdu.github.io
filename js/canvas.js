@@ -4,9 +4,9 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext("2d");
 var colorsArray = [
-    ["rgba(9, 48, 40, 0.2)", "rgba(35, 122, 87, 0.3)", "rgba(198, 152, 46, 0.3)"],
+    ["rgba(9, 48, 40, 0.2)", "rgba(35, 122, 87, 0.3)", "rgba(249, 210, 32, 0.3)"],
     ["rgba(147, 192, 40, 0.2)", "rgba(202, 217, 217, 0.3)", "rgba(181, 39, 37, 0.1)"],
-    ["rgba(118, 163, 210, 0.3)", "rgba(225, 235, 175, 0.4)", "rgba(122, 202, 201, 0.3)"]
+    ["rgba(118, 163, 210, 0.3)", "rgba(225, 224, 87, 0.4)", "rgba(122, 202, 201, 0.3)"]
 ]
 var mouse = {
     x: undefined,
