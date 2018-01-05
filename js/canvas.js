@@ -78,16 +78,36 @@ console.log(circleArray)
 function init() {
     circleArray = []
     for (let i = 0; i < 300; i++) {
-        var r = Math.floor(Math.random() * 255)
-        var g = Math.floor(Math.random() * 0)
-        var b = Math.floor(Math.random() * 0)
-        var a = 0.3;
+        // var r = Math.floor(Math.random() * 255)
+        // var g = Math.floor(Math.random() * 0)
+        // var b = Math.floor(Math.random() * 0)
+        // var a = 0.3;
+        // var x = Math.random() * (innerWidth - radius * 2) + radius;
+        // var y = Math.random() * innerHeight - (radius * 2) + radius;
+        // var dx = (Math.random() - 0.5);
+        // var dy = (Math.random() - 0.5);
+        // var radius = Math.random() * 3 + 1;
+        // circleArray.push(new Circle(x, y, dx, dy, radius, r, g, b, a));
+
+        if (i % 2 === 0) {
+        // var r = Math.floor(Math.random() * 255)
+        // var g = Math.floor(Math.random() * 0)
+        // var b = Math.floor(Math.random() * 0)
+        // var a = 0.3;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * innerHeight - (radius * 2) + radius;
         var dx = (Math.random() - 0.5);
         var dy = (Math.random() - 0.5);
         var radius = Math.random() * 3 + 1;
-        circleArray.push(new Circle(x, y, dx, dy, radius, r, g, b, a));
+        circleArray.push(new Circle(x, y, dx, dy, radius, 9, 48, 40, 0.3));
+        } else {
+            var x = Math.random() * (innerWidth - radius * 2) + radius;
+            var y = Math.random() * innerHeight - (radius * 2) + radius;
+            var dx = (Math.random() - 0.5);
+            var dy = (Math.random() - 0.5);
+            var radius = Math.random() * 3 + 1;
+            circleArray.push(new Circle(x, y, dx, dy, radius, 35, 122, 28, 0.3));
+        }
     }
 }
 
