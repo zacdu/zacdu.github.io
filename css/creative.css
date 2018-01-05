@@ -280,7 +280,6 @@ header .header-content .header-content-inner p {
   top: 10%;
   transform: translateY(-50%);
   text-color: white;
-
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -288,10 +287,9 @@ header .header-content .header-content-inner p {
   padding: 10px 10px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  text-transform: none;
+  text-transform: translateY(-50%);
   font-weight: 300;
   font-size: 14px;
-  position: relative
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
