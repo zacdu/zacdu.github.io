@@ -151,6 +151,9 @@ aside {
     color: #082B3D;
   }
 }
+
+
+
 header {
   position: relative;
   width: 100%;
@@ -456,6 +459,8 @@ body {
 }
 
 /* My Additions */
+
+
 .inactiveLink {
    pointer-events: none;
    cursor: default;

@@ -76,7 +76,7 @@ console.log(circleArray)
 
 function init() {
     circleArray = []
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 100; i++) {
         if (i % 2 === 0) {
         // var r = Math.floor(Math.random() * 255)
         // var g = Math.floor(Math.random() * 0)
@@ -117,58 +117,3 @@ function animate() {
 
 init();
 animate();
-
-// Line 
-// c.beginPath()
-// c.moveTo(50, 300)
-// c.lineTo(300, 100)
-// c.strokeStyle = "steelblue"
-// c.stroke()
-
-// Arc/Circle
-// c.beginPath()
-// c.arc(300, 300, 30, 0, Math.PI * 2, false)
-// c.strokeStyle = "black"
-// c.stroke()
-
-// for(var i = 0; i < 60; i++){
-//     var x = Math.floor(Math.random() * window.innerWidth)
-//     var y = Math.floor(Math.random() * window.innerHeight)
-
-//     var r = Math.floor(Math.random() * 255)
-//     var g = Math.floor(Math.random() * 255)
-//     var b = Math.floor(Math.random() * 255)
-
-//     randomCircle(x, y, r, g, b)
-//     randomLine(x, y, r, g, b)
-//     randomSquare(x, y, r, g, b)
-// }
-
-// function randomCircle(x, y, r, g, b) {
-//     var rgb = "rgb(" + r + ", " + g + ", " + b + ")"
-//     c.beginPath()
-//     c.arc(x, y, 30, 0, Math.PI * 2, false)
-//     c.strokeStyle = rgb
-//     c.stroke()
-// }
-
-// function randomLine(x, y, r, g, b) {
-//     var rgb = "rgb(" + r + ", " + g + ", " + b + ")"
-//     var innerX = Math.floor(Math.random() * window.innerWidth / 4)
-//     var innerY = Math.floor(Math.random() * window.innerHeight / 2)
-//     c.beginPath()
-//     c.moveTo(x, y)
-//     c.lineTo(innerX, innerY)
-//     c.strokeStyle = rgb
-//     c.stroke()
-// }
-
-// function randomSquare(x, y, r, g, b) {
-//     var rgb = "rgb(" + r + ", " + g + ", " + b + ")"
-//     var width = Math.floor(Math.random() * 50)
-//     var height = Math.floor(Math.random() * 50)
-//     c.fillStyle = rgb
-//     c.fillRect(x, y, width, height)
-// }
-
-
