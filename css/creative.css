@@ -287,7 +287,7 @@ header .header-content .header-content-inner p {
   padding: 10px 10px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-  text-transform: translateY(-50%);
+  text-transform: none;
   font-weight: 300;
   font-size: 14px;
 }
