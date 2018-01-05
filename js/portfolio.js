@@ -68,6 +68,22 @@ title.pause(2500);
 title.options({speed: 80});
 title.type("<h1 class='bottomHackView'>...I also write and make music.</h1>");
 
+var headerTwo = new TypeIt(".headerTwo", {
+    strings: ["Some"],
+    autoStart: false,
+    lifeLike: true
+});
+headerTwo.pause(200);
+headerTwo.type(" things");
+headerTwo.pause(800);
+headerTwo.options({
+    speed: 660
+});
+headerTwo.delete(6);
+headerTwo.options({
+    speed: 90
+});
+headerTwo.type(" projects I've worked on.");  
 
 
 
