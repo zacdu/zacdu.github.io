@@ -7,8 +7,8 @@ var mouse = {
     x: undefined,
     y: undefined
 };
-var maxRadius = 60;
-// var minRadius = 2;
+var maxRadius = 30;
+var minRadius = 2;
 
 window.addEventListener("mousemove", function(event){
     console.log(event)
@@ -37,6 +37,7 @@ function Circle(x, y, dx, dy, radius, r, g, b, a, minRadius) {
 
     this.draw = function () {
         var rgb = "rgba(" + this.r + ", " + this.g + ", " + this.b + ", " + a + ")"
+        // var rgb = "rgba(202, 217, 217, 0.2)"
         c.beginPath();
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.strokeStyle = rgb;
@@ -76,11 +77,11 @@ console.log(circleArray)
 
 function init() {
     circleArray = []
-    for (let i = 0; i < 600; i++) {
+    for (let i = 0; i < 300; i++) {
         var r = Math.floor(Math.random() * 255)
-        var g = Math.floor(Math.random() * 155)
-        var b = Math.floor(Math.random() * 55)
-        var a = Math.random() + 0.2;
+        var g = Math.floor(Math.random() * 0)
+        var b = Math.floor(Math.random() * 0)
+        var a = 0.3;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * innerHeight - (radius * 2) + radius;
         var dx = (Math.random() - 0.5);
