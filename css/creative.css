@@ -470,6 +470,10 @@ body {
   font-weight: 100;
 }
 
+.fa-file-text-o{
+  font-size: 125%;
+}
+
 .fa-spotify:before{
   font-size: 150%;
 }
